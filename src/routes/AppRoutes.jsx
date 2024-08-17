@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from '../pages/HomePage/HomePage';  // Use default import if exporting as default
+import HomePage from '../pages/HomePage/HomePage'; 
 import DestinationPage from '../pages/DestinationPage/DestinationPage';
 import CrewPage from '../pages/CrewPage/CrewPage';
 import TechnologyPage from '../pages/TechnologyPage/TechnologyPage';

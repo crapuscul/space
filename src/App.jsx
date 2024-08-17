@@ -10,10 +10,8 @@ export default function App() {
 
   return (
     <>
-        <Navbar />
-      <AppRoutes />
-      <h1>Hello World</h1>
-
+    <Navbar />
+    <AppRoutes />
     </>
   )
 }

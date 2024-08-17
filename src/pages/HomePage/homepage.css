@@ -1,0 +1,69 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/src/assets/images/background-home-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+.grid-container{
+    padding: 150px;
+    display: grid;
+    color: white;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.box1{
+    margin-top: 60px;
+    /* border: 2px solid white; */
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+
+}
+.box2{
+    
+    
+    font-size: 100px;
+    /* border: 2px solid white; */
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+    
+}
+.box3{
+    margin-top: 40px;
+    /* border: 2px solid white; */
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 3;
+    
+}
+.box4{
+    /* border: solid 10px red; */
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    width: 50%;
+    margin: 0 auto;
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 3;
+}
+.box4 h2{
+    display: flex; /* Makes the h2 a flex container */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    width: 50%;
+    margin:  0 auto;
+   
+    text-align: center;
+    color: black;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+    background-color: white;    
+}
+
