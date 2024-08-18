@@ -14,7 +14,7 @@ export default function DestinationPage() {
             travelTime:"3 DAYS",
             },
         section2: { 
-            picture:"./assets/images/destination/image-moon.png",
+            picture:"./src/assets/images/destination/image-mars.png",
                     heading: "MARS", 
                     text: "Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!",
                     distanceTitle: "AVG. DISTANCE",
@@ -22,7 +22,7 @@ export default function DestinationPage() {
                     travelTimeTitle: "Est. travel time",
                     travelTime:"9 MONTHS",
                 },
-        section3: { picture:"./assets/images/destination/image-moon.png",
+        section3: {  picture:"./src/assets/images/destination/image-europa.png",
             
             heading: "EUROPA", 
                     text: "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
@@ -31,7 +31,7 @@ export default function DestinationPage() {
                     travelTimeTitle: "Est. travel time",
                     travelTime:"3 YEARS",
          },
-        section4: {picture:"./assets/images/destination/image-moon.png",
+        section4: { picture:"./src/assets/images/destination/image-titan.png",
             
             heading: "TITAN", 
                     text: "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn." ,
@@ -50,13 +50,22 @@ export default function DestinationPage() {
         const section = sections[selectedSection];
         return (
             <div>
-                <img src={section.picture} alt={section.heading} className="section-image" />
-                <h2>{section.heading}</h2>
-                <p>{section.text}</p>
-                <h3>{section.distanceTitle}</h3>
-                <p>{section.distance}</p>
-                <h3>{section.travelTimeTitle}</h3>
-                <p>{section.travelTime}</p>
+                <div className='section-grid'>
+                    <div className='image-box'> 
+                        <img src={section.picture} alt={section.heading}/>
+                        </div>
+
+                        <div className='text-box'>
+                        <h2>{section.heading}</h2>
+                            <p>{section.text}</p>
+                            <h3>{section.distanceTitle}</h3>
+                            <p>{section.distance}</p>
+                            <h3>{section.travelTimeTitle}</h3>
+                            <p>{section.travelTime}</p>
+                    </div>
+
+                </div>
+                   
             </div>
         );
     };

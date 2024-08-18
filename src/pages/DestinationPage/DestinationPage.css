@@ -12,6 +12,29 @@ body {
 }
 .main-section{
     color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.destination-nav{
+    
+    grid-column: 2;
+    
+}
+.section-grid{
+   margin-left: 250px;
+    border: solid 2px red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.image-box{
+    
+    border: solid 2px rgb(40, 156, 92);
+    grid-column: 1span/1;
+}
+.text-box{
+    margin-right: -500px;
+    border: solid 2px red;
+    grid-column: 2span2;
 }
 .destination-nav ul{
     display: flex;
@@ -33,4 +56,9 @@ body {
     text-underline-offset: 18px;
     text-decoration: underline 2px;
     cursor: pointer;
+}
+
+.container-main{
+    display: flex;
+    flex-direction: row;
 }
