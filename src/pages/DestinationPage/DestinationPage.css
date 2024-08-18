@@ -1,0 +1,36 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/src/assets/images/destination/background-destination-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-section{
+    color: white;
+}
+.destination-nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-decoration: none;
+}
+
+
+.nav-list {
+    border: none;
+    background: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-list.selected {
+    text-underline-offset: 18px;
+    text-decoration: underline 2px;
+    cursor: pointer;
+}
