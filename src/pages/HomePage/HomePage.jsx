@@ -1,6 +1,6 @@
 import React from "react";
 import "./homepage.css"
-import Navbar from "../../components/navbar/navbar";
+
 
 export default function HomePage(){
     return (

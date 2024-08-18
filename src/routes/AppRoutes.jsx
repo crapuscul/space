@@ -10,14 +10,14 @@ import TechnologyPage from '../pages/TechnologyPage/TechnologyPage';
 export default function AppRoutes(){
     return (
         <>
-        <Router>
+       
             <Routes>
-                <Route  path="/" element={<HomePage/>}/>
+                <Route  exact path="/" element={<HomePage/>}/>
                 <Route  path="/DestinationPage" element={<DestinationPage/>}/>
                 <Route  path="/CrewPage" element={<CrewPage/>}/>
                 <Route  path="/TechnologyPage" element={<TechnologyPage/>}/>
             </Routes>
-        </Router>
+        
         </>
     )
 }

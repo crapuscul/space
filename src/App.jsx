@@ -10,8 +10,10 @@ export default function App() {
 
   return (
     <>
-    <Navbar />
-    <AppRoutes />
+      <Router>
+        <Navbar />
+        <AppRoutes />
+      </Router>
     </>
   )
 }
