@@ -4,7 +4,7 @@ html, body {
     box-sizing: border-box;
 }
 
-body {
+body.destination-body {
     background-image: url("/src/assets/images/destination/background-destination-desktop.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -44,6 +44,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin: 50px 150px;
+    
    
 }
 .grid-right{
@@ -60,12 +61,15 @@ grid-row: 1 / span 2;
     text-align: center;
 }
 .destination-name{
+    margin: 40px 0;
     font-size: 100px;
 }
 .text-section p{
     text-align: start;
+    margin: 20px 0;
 }
 .distance-time{
+    margin: 20px 0;
 display: flex;
 flex-direction: row;
 justify-content: space-between;

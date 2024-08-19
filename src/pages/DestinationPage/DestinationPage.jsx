@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./DestinationPage.css"
 
 export default function DestinationPage() {
-    // Define the sections with their respective heading and text
+    // Define the sections with their respective elemets
     const sections = {
         section1: {
             picture:"./src/assets/images/destination/image-moon.png",
@@ -45,43 +45,52 @@ export default function DestinationPage() {
     // State to track the selected section
     const [selectedSection, setSelectedSection] = useState('section1');
 
+    // to dynamically change background-image
+    // Add class to body to target in the css
+     // UseEffect to add class to body
+     useEffect(() => {
+        document.body.classList.add('destination-body');
+
+        // Cleanup on unmount when the user moves to another page
+        return () => {
+            document.body.classList.remove('destination-body');
+        };
+    }, []);
+
     // Function to render the content of the selected section
     const renderSectionContent = () => {
         const section = sections[selectedSection];
         return (
             <div>               
-                        <h2 className='destination-name'>{section.heading}</h2>
-                            <p className='text-section'>{section.text}</p>
-                            <div className='destination-divider'><hr/></div>
-                            
-                            <div className='distance-time'>
-                            <div className='distance'>
-                                <h3>{section.distanceTitle}</h3>
-                                <p>{section.distance}</p>
-                            </div>
-                            <div className='time'>
-                                <h3>{section.travelTimeTitle}</h3>
-                                <p>{section.travelTime}</p>
-                            </div>
-
-
-                            </div>
-
+                <h2 className='destination-name'>{section.heading}</h2>
+                    <p className='text-section'>{section.text}</p>
+                    <div className='destination-divider'><hr/></div>
+                    
+                    <div className='distance-time'>
+                    <div className='distance'>
+                        <h3>{section.distanceTitle}</h3>
+                        <p>{section.distance}</p>
                     </div>
+                    <div className='time'>
+                        <h3>{section.travelTimeTitle}</h3>
+                        <p>{section.travelTime}</p>
+                    </div>
+                    </div>
+                </div>
         );
     };
     const renderSectionImg = () => {
         const section = sections[selectedSection];
         return (
             <div>             
-                        <img src={section.picture} alt={section.heading}/>   
-                    </div>
+                <img src={section.picture} alt={section.heading}/>   
+            </div>
         );
     };
 
     return (
-        <>
-            <main className='main-section'>
+        <> <body className='destination-body'>
+             <main className='main-section'>
                 <div className='main-container'>
                     <div className='grid-right'>
                         <nav className='destination-nav'>
@@ -108,6 +117,8 @@ export default function DestinationPage() {
                             </div>
                 </div>
             </main>
+        </body>
+           
         </>
     );
 }
