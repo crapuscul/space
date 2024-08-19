@@ -49,45 +49,63 @@ export default function DestinationPage() {
     const renderSectionContent = () => {
         const section = sections[selectedSection];
         return (
-            <div>
-                <div className='section-grid'>
-                    <div className='image-box'> 
-                        <img src={section.picture} alt={section.heading}/>
-                        </div>
+            <div>               
+                        <h2 className='destination-name'>{section.heading}</h2>
+                            <p className='text-section'>{section.text}</p>
+                            <div className='destination-divider'><hr/></div>
+                            
+                            <div className='distance-time'>
+                            <div className='distance'>
+                                <h3>{section.distanceTitle}</h3>
+                                <p>{section.distance}</p>
+                            </div>
+                            <div className='time'>
+                                <h3>{section.travelTimeTitle}</h3>
+                                <p>{section.travelTime}</p>
+                            </div>
 
-                        <div className='text-box'>
-                        <h2>{section.heading}</h2>
-                            <p>{section.text}</p>
-                            <h3>{section.distanceTitle}</h3>
-                            <p>{section.distance}</p>
-                            <h3>{section.travelTimeTitle}</h3>
-                            <p>{section.travelTime}</p>
+
+                            </div>
+
                     </div>
-
-                </div>
-                   
-            </div>
+        );
+    };
+    const renderSectionImg = () => {
+        const section = sections[selectedSection];
+        return (
+            <div>             
+                        <img src={section.picture} alt={section.heading}/>   
+                    </div>
         );
     };
 
     return (
         <>
             <main className='main-section'>
-                <nav className='destination-nav'>
-                    <ul>
-                        <li className={`nav-list ${selectedSection === 'section1' ? 'selected' : ''}`}
-                          onClick={() => setSelectedSection('section1')}>MOON</li>
-                        <li className={`nav-list ${selectedSection === 'section2' ? 'selected' : ''}`}
-                          onClick={() => setSelectedSection('section2')}>MARS</li>
-                        <li className={`nav-list ${selectedSection === 'section3' ? 'selected' : ''}`}
-                          onClick={() => setSelectedSection('section3')}>EUROPA</li>
-                        <li className={`nav-list ${selectedSection === 'section4' ? 'selected' : ''}`}
-                          onClick={() => setSelectedSection('section4')}>TITAN</li>
-                    </ul>
+                <div className='main-container'>
+                    <div className='grid-right'>
+                        <nav className='destination-nav'>
+                            <ul>
+                                <li className={`nav-section-list ${selectedSection === 'section1' ? 'selected' : ''}`}
+                                onClick={() => setSelectedSection('section1')}>MOON</li>
+                                <li className={`nav-section-list ${selectedSection === 'section2' ? 'selected' : ''}`}
+                                onClick={() => setSelectedSection('section2')}>MARS</li>
+                                <li className={`nav-section-list ${selectedSection === 'section3' ? 'selected' : ''}`}
+                                onClick={() => setSelectedSection('section3')}>EUROPA</li>
+                                <li className={`nav-section-list ${selectedSection === 'section4' ? 'selected' : ''}`}
+                                onClick={() => setSelectedSection('section4')}>TITAN</li>
+                            </ul>
+                            
+                                </nav>
+                                <div className="section-content">
+                                    {renderSectionContent()}
+                                    
+                                </div>
+                            </div>
                     
-                </nav>
-                <div className="section-content">
-                    {renderSectionContent()}
+                            <div className='grid-left'>
+                            {renderSectionImg()}
+                            </div>
                 </div>
             </main>
         </>
