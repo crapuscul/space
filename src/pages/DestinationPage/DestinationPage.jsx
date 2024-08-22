@@ -91,7 +91,10 @@ export default function DestinationPage() {
     return (
         <> <body className='destination-body'>
              <main className='main-section'>
+             <div className='slogan'><span>01</span>PICK YOUR DESTINATION</div>
+                
                 <div className='main-container'>
+                
                     <div className='grid-right'>
                         <nav className='destination-nav'>
                             <ul>
@@ -113,6 +116,7 @@ export default function DestinationPage() {
                             </div>
                     
                             <div className='grid-left'>
+                                
                             {renderSectionImg()}
                             </div>
                 </div>
