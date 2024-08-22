@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     box-sizing: border-box;
     height: 100vh;
+    overflow: hidden;
 }
 
 body {
@@ -68,13 +69,8 @@ body {
     border-radius: 50%;
     background-color: white;    
 }
-/* @media only screen and (max-width:1128px){
-    .grid-container{
-        padding: 50px;
-       
-    } */
-    
-/* } */
+
+/* breakpoint for tablet view */
 @media only screen and (max-width:928px){
     .grid-container{
         padding: 10px;
@@ -96,6 +92,7 @@ body {
     .box3{
         grid-column: 1;
         grid-row: 3;
+        margin-bottom: 40px;
     }
     .box4{
         grid-column: 1;
@@ -103,7 +100,19 @@ body {
     }
 
 }
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:393px) {
+    .box3 br{
+        display: none;
+    }
    
 }
+@media only screen and (max-width: 316px){
+.grid-container{
+    padding: 0;
+}
+.box2{
+    font-size: 80px;
+}
+}
+    
     
