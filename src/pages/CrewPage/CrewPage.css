@@ -83,3 +83,45 @@ transition: all 0.4s ease;
 height: 35%;
 margin: auto 0;
 }
+
+@media only screen and (max-width:1225px){
+
+    .crew-members-content{
+        display: grid;
+        border: 1px solid white;
+        grid-template-columns: 1fr;
+
+    }
+    .box-left{
+        flex-direction: column;
+        justify-content: space-evenly;
+        grid-column: 1 /span 1;
+        grid-row: 1 /span 1;
+        order: 1;
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+
+    }
+    .box-right{
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 2;
+        order: 2;
+    }
+}
+@media only screen and (max-width:928px){
+
+    .crew-members-content{
+        margin: 0 14%;
+    }
+}
+@media only screen and (max-width:630px){
+
+    .crew-members-content{
+        margin: 0 10%;
+    }
+}
+@media only screen and (max-width:407px){
+
+    
+}
