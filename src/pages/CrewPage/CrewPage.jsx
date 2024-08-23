@@ -64,7 +64,7 @@ export default function CrewPage() {
   }
     return (
       <div>
-        <body className="crew-body">
+        <div className="crew-body">
           <main className="main-section">
           <div className='slogan'><span>02</span>MEET YOUR CREW</div>
           </main>
@@ -87,7 +87,7 @@ export default function CrewPage() {
 
             </div>
            </div>
-        </body>
+        </div>
 
                 
       </div>
