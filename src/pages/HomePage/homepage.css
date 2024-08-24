@@ -1,3 +1,7 @@
+:root {
+    font-size: 16px; /* Base font size */
+}
+  
 html, body {
     margin: 0;
     padding: 0;
@@ -6,7 +10,7 @@ html, body {
     overflow-x: hidden;
 }
 
-body {
+body.home-body {
     background-image: url("/src/assets/images/background-home-desktop.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -23,6 +27,9 @@ body {
     grid-template-rows: 1fr 1fr 1fr;
 }
 .box1{
+    font: var(--text-preset-5);
+    letter-spacing: var(--text-preset-5-letter-spacing);
+    color: var( --text-color-light-blue);
     margin-top: 60px;
     /* border: 2px solid white; */
     grid-column: 1 / span 2;
@@ -32,13 +39,17 @@ body {
 .box2{
     
     
-    font-size: 100px;
+    font:var(--text-preset-1);
+    letter-spacing: var(--text-preset-1-letter-spacing);
     /* border: 2px solid white; */
     grid-column: 1 / span 2;
     grid-row: 2 / span 2;
     
 }
-.box3{
+.box3{  
+    font: var(--text-preset-9);
+    letter-spacing: var(--text-preset-9-letter-spacing);
+    color: var(--text-color-light-blue);
     margin-top: 40px;
     /* border: 2px solid white; */
     grid-column: 1 / span 2;
@@ -47,7 +58,7 @@ body {
 }
 .box4{
     /* border: solid 10px red; */
-    
+
     display: flex;
     flex-direction: row;
     align-items:flex-end;
@@ -57,21 +68,28 @@ body {
 
 }
 .box4 h2{
-    display: flex; /* Makes the h2 a flex container */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    width: 50%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font: var(--text-preset-4);
+    letter-spacing: var(--text-preset-4-letter-spacing);
     margin:  0 auto;
     text-align: center;
-    color: black;
-    height: 20vh;
-    width: 20vh;
+    color: var(--dark-blue);
+    /* used 272px instead of 17em for the circle dimensions because the circle size is based on the font-size defined
+     in --text-preset-4 (32px) and not 16px of the base, and em units are relative to that font size.  */
+    height:272px; 
+    width:272px;
     border-radius: 50%;
     background-color: white;    
 }
 
 /* breakpoint for tablet view */
 @media only screen and (max-width:928px){
+    body.home-body {
+        background-image: url("/src/assets/images/background-home-tablet.jpg");
+    
+    }
     .grid-container{
         padding: 10px;
     }
@@ -101,6 +119,10 @@ body {
 
 }
 @media only screen and (max-width:393px) {
+    body.home-body {
+        background-image: url("/src/assets/images/background-home-mobile.jpg");
+    
+    }
     .box3 br{
         display: none;
     }

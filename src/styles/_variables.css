@@ -1,0 +1,77 @@
+
+:root{
+   
+        font-size: 16px; 
+      
+    /* colors */
+        --text-color-light-blue: #D0D6F9;
+        --dark-blue: #0B0D17;
+
+    /* typography */
+
+        /* Text Preset 1 */
+        --text-preset-1: 400 9em/171.9% 'Bellefair', serif; /* 144px / 16px = 9em */
+        --text-preset-1-letter-spacing: 0em; /* 0px / 16px = 0em */
+        
+        /* Text Preset 2 */
+        --text-preset-2: 400 6.25em/114.6% 'Bellefair', serif; /* 100px / 16px = 6.25em */
+        --text-preset-2-letter-spacing: 0em; /* 0px / 16px = 0em */
+        
+        /* Text Preset 3 */
+        --text-preset-3: 400 3.5em/64.2% 'Bellefair', serif; /* 56px / 16px = 3.5em */
+        --text-preset-3-letter-spacing: 0em; /* 0px / 16px = 0em */
+        
+        /* Text Preset 4 */
+        --text-preset-4: 400 2em/36.7% 'Bellefair', serif; /* 32px / 16px = 2em */
+        --text-preset-4-letter-spacing: 0em; /* 0px / 16px = 0em */
+        
+        /* Text Preset 5 */
+        --text-preset-5: 400 1.75em/33.6% 'Barlow Condensed', sans-serif; /* 28px / 16px = 1.75em */
+        --text-preset-5-letter-spacing: 0.25em; /* 4px / 16px = 0.25em */
+        
+        /* Text Preset 6 */
+        --text-preset-6: 400 1.75em/32.1% 'Bellefair', serif; /* 28px / 16px = 1.75em */
+        --text-preset-6-letter-spacing: 0em; /* 0px / 16px = 0em */
+        
+        /* Text Preset 7 */
+        --text-preset-7: 400 0.875em/16.8% 'Barlow Condensed', sans-serif; /* 14px / 16px = 0.875em */
+        --text-preset-7-letter-spacing: 0.125em; /* 2px / 16px = 0.125em */
+        
+        /* Text Preset 8 */
+        --text-preset-8: 400 1em/19.2% 'Barlow Condensed', sans-serif; /* 16px / 16px = 1em */
+        --text-preset-8-letter-spacing: 0.125em; /* 2px / 16px = 0.125em */
+        
+        /* Text Preset 9 */
+        --text-preset-9: 400 1.125em/180% 'Barlow', sans-serif; /* 18px / 16px = 1.125em */
+        --text-preset-9-letter-spacing: 0em; /* 0px / 16px = 0em */
+
+     /* Spacing */
+
+        /* Small Spacing */
+        --spacing-small: 0.125em; /* 2px / 16px */
+        --spacing-small-medium: 0.25em; /* 4px / 16px */
+
+        /* Medium Spacing */
+        --spacing-medium: 0.5em; /* 8px / 16px */
+        --spacing-medium-large: 0.75em; /* 12px / 16px */
+
+        /* Large Spacing */
+        --spacing-large: 1em; /* 16px / 16px */
+        --spacing-large-extra: 1.5em; /* 24px / 16px */
+
+        /* Extra Large Spacing */
+        --spacing-extra-large: 2em; /* 32px / 16px */
+        --spacing-extra-large-plus: 2.5em; /* 40px / 16px */
+
+        /* Huge Spacing */
+        --spacing-huge: 3em; /* 48px / 16px */
+        --spacing-huge-plus: 4em; /* 64px / 16px */
+
+        /* Extra Huge Spacing */
+        --spacing-extra-huge: 5em; /* 80px / 16px */
+        --spacing-extra-huge-plus: 8em; /* 128px / 16px */
+        /* Super extra huge spacing */
+        --spacing-super-extra-huge:9.9375em;
+
+
+}

@@ -2,7 +2,8 @@
   
     .desktopnav {
         position: relative;
-        padding: 20px 0 20px 20px;
+        padding-top: var(--spacing-extra-large-plus);
+        padding-left: var(--spacing-huge-plus);
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -10,6 +11,7 @@
         background: transparent;
         z-index: 1;
         overflow-x: hidden;
+        overflow-y: hidden;
 
 
     }
@@ -20,7 +22,7 @@
         z-index: 0;
      
         backdrop-filter: blur(100px); 
-        padding: 0 120px;
+        padding: 0 var( --spacing-super-extra-huge);
         
 
     }
@@ -29,6 +31,8 @@
         flex-direction: row;
         gap: 10px;
         color: white;
+        font: var(--text-preset-8);
+        letter-spacing: var(--text-preset-8-letter-spacing);
 
     }
 
@@ -41,15 +45,15 @@
     .nav-list{
         color: white;
         display: flex;
-        gap: 30px;
-        padding: 20px;
+        gap: var(--spacing-huge);
+        padding: 0;
     }
     ul{
         list-style: none;
     }
     .nav-list span{
-        
-        font-weight: 900;
+        font: var(--text-preset-8);
+        font-weight: bold;
     }
 
     .divider{
@@ -71,14 +75,11 @@
     .nav-item a {
         color: white;
         display: flex;
-        gap: 10px;
-        padding: 10px;
+        gap: var(--spacing-medium-large);
+        padding: var( --spacing-extra-large-plus) 0;
         text-decoration: none;
     }
-   .nav-item span{
-        font-size: large;
-        font-weight: 900;
-    }
+
     
     .nav-item .active {
         

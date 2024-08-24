@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./CrewPage.css"
 
-import Navbar from "../../components/navbar/navbar";
-
 export default function CrewPage() {
 
   const crewMembers = {
@@ -51,7 +49,7 @@ export default function CrewPage() {
       <div>
         
         <h2 className="crew-member-title">{crewMember.title}</h2>
-        <h1 className="crew-memeber-name">{crewMember.name}</h1>
+        <h1 className="crew-member-name">{crewMember.name}</h1>
         <p className="crew-member-bio">{crewMember.description}</p>
       </div>
       )
@@ -63,7 +61,7 @@ export default function CrewPage() {
     )
   }
     return (
-      <div>
+      
         <div className="crew-body">
           <main className="main-section">
           <div className='slogan'><span>02</span>MEET YOUR CREW</div>
@@ -90,6 +88,5 @@ export default function CrewPage() {
         </div>
 
                 
-      </div>
     );
   }

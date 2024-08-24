@@ -89,7 +89,7 @@ export default function DestinationPage() {
     };
 
     return (
-        <> <body className='destination-body'>
+        <> <div className='destination-body'>
              <main className='main-section'>
              <div className='slogan'><span>01</span>PICK YOUR DESTINATION</div>
                 
@@ -121,7 +121,7 @@ export default function DestinationPage() {
                             </div>
                 </div>
             </main>
-        </body>
+        </div>
            
         </>
     );

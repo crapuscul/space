@@ -1,8 +1,16 @@
-import React from "react";
+import {React, useEffect} from "react";
 import "./homepage.css"
 
 
 export default function HomePage(){
+    useEffect(() => {
+        document.body.classList.add('home-body');
+
+        // Cleanup on unmount when the user moves to another page
+        return () => {
+            document.body.classList.remove('home-body');
+        };
+    }, []);
     return (
         <>
             <main className="main">
