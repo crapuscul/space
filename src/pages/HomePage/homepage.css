@@ -19,7 +19,7 @@ body.home-body {
 
 }
 .grid-container{
-    padding: 150px;
+    padding: var( --spacing-huge-plus) var(--spacing-extra-huge);
     display: grid;
     color: white;
    
@@ -30,7 +30,7 @@ body.home-body {
     font: var(--text-preset-5);
     letter-spacing: var(--text-preset-5-letter-spacing);
     color: var( --text-color-light-blue);
-    margin-top: 60px;
+    margin-top: var(--spacing-super-extra-huge);
     /* border: 2px solid white; */
     grid-column: 1 / span 2;
     grid-row: 1 / span 1;
@@ -76,10 +76,8 @@ body.home-body {
     margin:  0 auto;
     text-align: center;
     color: var(--dark-blue);
-    /* used 272px instead of 17em for the circle dimensions because the circle size is based on the font-size defined
-     in --text-preset-4 (32px) and not 16px of the base, and em units are relative to that font size.  */
-    height:272px; 
-    width:272px;
+    height:17rem; 
+    width:17rem;
     border-radius: 50%;
     background-color: white;    
 }
@@ -102,6 +100,8 @@ body.home-body {
     .box1{
         grid-column: 1;
         grid-row: 1;
+        font: var(--text-preset-6);
+        letter-spacing: var(--text-preset-6-letter-spacing);
     }
     .box2{
         grid-column: 1;
@@ -118,23 +118,39 @@ body.home-body {
     }
 
 }
-@media only screen and (max-width:393px) {
+@media only screen and (max-width: 444px) {
     body.home-body {
         background-image: url("/src/assets/images/background-home-mobile.jpg");
     
     }
+    .box1{
+        font: var( --text-preset-9-2);
+        letter-spacing: var( --text-preset-9-2-letter-spacing);
+    }
+    .box2{
+        font: var( --text-preset-2-2) ;
+        letter-spacing: var( --text-preset-2-2-letter-spacing);
+    }
     .box3 br{
         display: none;
     }
-   
+   .box3{
+    font: var(--text-preset-9-3);
+    letter-spacing: var(--text-preset-9-3-letter-spacing);
+   }
+   .box4 h2{
+    font: var(--text-preset-9);
+    height: 9rem;
+    width: 9rem;
+   }
 }
 @media only screen and (max-width: 316px){
-.grid-container{
+/* .grid-container{
     padding: 0;
-}
-.box2{
+} */
+/* .box2{
     font-size: 80px;
-}
+} */
 }
     
     
