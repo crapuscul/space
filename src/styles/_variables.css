@@ -33,10 +33,16 @@
     /* Text Preset 6 */
     --text-preset-6: 400 1.75rem/32.1% 'Bellefair', serif; /* 28px / 16px = 1.75rem */
     --text-preset-6-letter-spacing: 0rem; /* 0px / 16px = 0rem */
+        /* Text Preset 6-2 mobile */
+        --text-preset-6-2: 400 1.25rem/32.1% 'Bellefair', serif; 
+        --text-preset-6-2-letter-spacing: 0rem; 
     
     /* Text Preset 7 */
     --text-preset-7: 400 0.875rem/16.8% 'Barlow Condensed', sans-serif; /* 14px / 16px = 0.875rem */
     --text-preset-7-letter-spacing: 0.125rem; /* 2px / 16px = 0.125rem */
+
+    --text-preset-7-2: 400 0.9375rem/180% 'Barlow Condensed', sans-serif; /* 14px / 16px = 0.875rem */
+    --text-preset-7-2-letter-spacing: 0.125rem; /* 2px / 16px = 0.125rem */
     
     /* Text Preset 8 */
     --text-preset-8: 400 1rem/19.2% 'Barlow Condensed', sans-serif; /* 16px / 16px = 1rem */
@@ -49,7 +55,7 @@
     --text-preset-9: 400 1.125rem/180% 'Barlow', sans-serif; /* 18px / 16px = 1.125rem */
     --text-preset-9-letter-spacing: 0rem; /* 0px / 16px = 0rem */
         /* Text Preset 9.2 mobile */ 
-        --text-preset-9-2: 400 1/auto 'Barlow', sans-serif; /* 16px / 16px = 1rem */
+        --text-preset-9-2: 400 1/180% 'Barlow', sans-serif; /* 16px / 16px = 1rem */
         --text-preset-9-2-letter-spacing: 0rem; /* 0px / 16px = 0rem */
 
         --text-preset-9-3: 400 0.9375rem/180% 'Barlow', sans-serif; /* 16px / 16px = 1rem */

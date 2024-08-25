@@ -84,6 +84,7 @@ body.home-body {
 
 /* breakpoint for tablet view */
 @media only screen and (max-width:928px){
+    
     body.home-body {
         background-image: url("/src/assets/images/background-home-tablet.jpg");
     
