@@ -156,14 +156,16 @@ justify-content: space-between;
         grid-row: 1 / span 1;
         order: 1;
         text-align: center;
-        height: 384px;
+       
         margin: var( --spacing-extra-large-plus) var(--spacing-super-extra-huge) ;
         vertical-align: middle;
     }
     .grid-left img  {
-        padding: 0 0;
-        height: 300px;
-        width: 300px;
+        padding: 0;
+        width: 100%; /* The image will take up 100% of the width of its container */
+        height: auto; /* The height will adjust to maintain the aspect ratio */
+        max-width: 300px; /* The image will not exceed 300px in width */
+        max-height: 300px; /* The image will not exceed 300px in height */
        }
     .destination-name{
         margin: 0;
@@ -202,14 +204,30 @@ justify-content: space-between;
         padding: var(--spacing-extra-huge-plus) var( --spacing-large-extra);
     }
     .distance-time{
+        
         flex-direction: column;
+    }
+    .distance{
+        padding: 24px 0;
+    }
+    .destination-divider hr{
+        margin: var( --spacing-large-extra) 0 0 0;
+    }
+    .slogan-destination{
+   text-align: center;
+    padding-left: 0;
     }
     .grid-left{
         height: 50%;
+        margin: 0 auto var( --spacing-extra-large) auto  ;
+        padding: 0;
+        
     }
+
     .grid-left img{
-        height: 150px;
-        width: 150px;
+ 
+        min-width: 150px; /* The image will not exceed 150px in width */
+        min-height: 150px; /* The image will not exceed 150px in height */
     }    
 }
 

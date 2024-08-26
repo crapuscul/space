@@ -63,10 +63,12 @@ export default function CrewPage() {
     return (
       
         <div className="crew-body">
-          <main className="main-section">
-          <div className='slogan'><span>02</span>MEET YOUR CREW</div>
-          </main>
+          
+          
+          
           <div className="crew-members-content">
+          <div className='slogan'><span>02</span>MEET YOUR CREW
+          </div>
           <div className="box-right"> {renderCrewPicture()}</div>
           <div className="box-left">
            <div className="crew-content">
