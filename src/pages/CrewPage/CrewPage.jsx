@@ -5,7 +5,7 @@ export default function CrewPage() {
 
   const crewMembers = {
     crew1: {
-     picture:"./src/assets/images/crew/image-douglas-hurley.png",
+     picture:"./src/assets/images/crew/image-douglas-hurley.webp",
      
       title: "COMMANDER",
       name: "DOUGLAS HURLEY",

@@ -33,7 +33,7 @@ body.crew-body{
     color: grey;
     font: var(--text-preset-4);
     letter-spacing: var(--text-preset-4-letter-spacing);
-    padding: 0 0 var( --spacing-large);
+    /* padding: var( --spacing-large) 0 ; */
 
 
 }
@@ -80,13 +80,14 @@ body.crew-body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: var(--spacing-super-extra-huge) 0;
 }
 .crew-members-pagination{
     display: flex;
     justify-content:left;
     align-items: center;
     gap: 40px;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
  
 }
 .dot{
@@ -112,7 +113,7 @@ margin:  0;
 }
 @media only screen and (max-width:1288px){
     .crew-members-content{
-        margin:0;
+        margin: var( --spacing-huge) var(--spacing-extra-huge);
     }
 }
 @media only screen and (max-width:1225px){
@@ -127,7 +128,7 @@ margin:  0;
 
     }
     .slogan{
-        text-align: center;
+        margin-left:var(--spacing-extra-huge);
     }
     .box-left{
         flex-direction: column;
@@ -169,10 +170,14 @@ margin:  0;
 
 
     .slogan{
+        margin: 0;
         font-size: 1rem;
         font-weight: 400;
         font-family: 'Barlow Condensed', 'sans-serifs';
         text-align: center;
+    }
+    .box-left{
+        height: 50vh;
     }
     .crew-member-name{
         font: var(--text-preset-7-2);
@@ -191,27 +196,53 @@ margin:  0;
         height: auto;
         margin:  0;
     }
+    .box-right{
+        width: 50%;
+        margin: 0  auto 0p auto ;
+    }
+    .box-right img{
+        height: 700px;
+        margin-top: -200px;
+    }
 }
 @media only screen and (max-width:630px){
     body.crew-body{
         background-image: url("/src/assets/images/crew/background-crew-mobile.jpg");
     }
+    .box-left{
+        height: 20vh;
+    }
 
     .box-right{
         width: 100%;
+        height: 30vh;
  
     }
     .box-right img{
-        width: 95%;
-        height: 95%;
+        margin: 0;
+       
     }
 
 }
-    /* @media only screen and (max-width:407px){
-        .crew-member-name{
-            font-size: 1.2em;
+    @media only screen and (max-width:535px){
+        .box-right{
+            width: 100%;
+            height: 50vh;
+     
         }
-        .crew-member-title{
-            font-size: 1em;;
+
+        .box-right img{
+         width: 100%;
+        height:100%;
+        margin-top: 0
         }
-    } */
+}
+@media only screen and (max-width: 375px){
+.crew-member-bio{
+    
+    width: 100%;
+}
+.box-right{
+    height: 100%;
+}
+}
