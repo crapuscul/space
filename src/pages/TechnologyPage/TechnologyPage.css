@@ -78,23 +78,40 @@ body.technology-body{
         flex-direction: column;
         justify-content: space-between ;
     }
-    .section1-grid h1, h2, p{
-        padding: 0;
-        margin: 0;
-    }
+        /* .section1-grid h1, h2, p{
+            padding: 0;
+            margin: 0;
+        } */
+    .tech-title h2{
+            padding: 0;
+            margin: 0;
+     }
     .tech-title{
         font: var(--text-preset-4);
         letter-spacing: var(--text-preset-4-letter-spacing);
         color: gray;
+
     }
     .tech-name{
         font: var(--text-preset-3);
         letter-spacing: var(--text-preset-3-letter-spacing);
+     
+    }
+    .tech-name h1{
+
+        padding: 0;
+        margin: 0;
     }
     .tech-para{
         font: var(--text-preset-9);
         letter-spacing: var(--text-preset-9-letter-spacing);
         color: var(--text-color-light-blue);
+   
+    }
+    .tech-para p{
+
+        padding: 0;
+        margin: 0;
     }
 @media screen and ( max-width: 1328px){
     .main-tech{
@@ -128,6 +145,15 @@ body.technology-body{
     
 }
 @media only screen and (max-width: 994px) {
+    body.technology-body{
+        background-image: url("../src/assets/images/technology/background-technology-tablet.jpg");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+     }
     .image-portrait{
         display: none;
     }
@@ -199,7 +225,19 @@ body.technology-body{
 
 
 }
+@media screen and (max-width:775px) {
+    body.technology-body{
+        background-image: url("../src/assets/images/technology/background-technology-mobile.jpg");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+     }
+}
 @media screen and (max-width:418px) {
+
     .tech-name{
         font: var(--text-preset-6);
         letter-spacing: var(--text-preset-6-letter-spacing);
