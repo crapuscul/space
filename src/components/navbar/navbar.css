@@ -30,8 +30,6 @@
 
     }
     .transparent-box li{
-        cursor: pointer;
-        transition: ease-in-out all .5s;
         display: flex;
         flex-direction: row;
         gap: 10px;
@@ -86,14 +84,14 @@
     }
 
     
-    .nav-item .active {
+    .nav-item a.active {
         
         position: relative;
         display: inline-flex;
         align-items: center;
         gap: 10px; 
     }
-    .nav-item .active::after {
+    .nav-item a.active::after {
         content: '';
         position: absolute;
         left: 0;
@@ -146,8 +144,6 @@
             position: relative;
         }
         .hamburger{
-            transition: ease-in-out all .5s;
-            cursor: pointer;
             display: flex;
             justify-content: center;
             align-items: center;

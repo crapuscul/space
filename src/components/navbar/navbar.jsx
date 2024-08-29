@@ -43,22 +43,34 @@ export default function Navbar() {
         <div className="transparent-box">
           <ul className="nav-list">
             <li className="nav-item">
-              <NavLink to="/" className="active">
+              <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
                 <span>00</span> HOME
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/DestinationPage" className="active">
+              <NavLink
+                to="/DestinationPage"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
                 <span>01</span> DESTINATION
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/CrewPage" className="active">
+              <NavLink
+                to="/CrewPage"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
                 <span>02</span> CREW
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/TechnologyPage" className="active">
+              <NavLink
+                to="/TechnologyPage"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
                 <span>03</span> TECHNOLOGY
               </NavLink>
             </li>
@@ -103,22 +115,22 @@ export default function Navbar() {
         </div>
         <ul className={`mobile-nav-list ${isOpen ? "open" : ""}`}>
           <li className="mobile-nav-item">
-            <NavLink to="/" className="active">
+            <NavLink exact to="/" className="active">
               <span>00</span> HOME
             </NavLink>
           </li>
           <li className="mobile-nav-item">
-            <NavLink to="/DestinationPage" className="active">
+            <NavLink to="/DestinationPage" activeClassName="active">
               <span>01</span> DESTINATION
             </NavLink>
           </li>
           <li className="mobile-nav-item">
-            <NavLink to="/CrewPage" className="active">
+            <NavLink to="/CrewPage" activeClassName="active">
               <span>02</span> CREW
             </NavLink>
           </li>
           <li className="mobile-nav-item">
-            <NavLink to="/TechnologyPage" className="active">
+            <NavLink to="/TechnologyPage" activeClassName="active">
               <span>03</span> TECHNOLOGY
             </NavLink>
           </li>
