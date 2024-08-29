@@ -113,24 +113,37 @@ export default function Navbar() {
             </svg>
           </div>
         </div>
+
         <ul className={`mobile-nav-list ${isOpen ? "open" : ""}`}>
           <li className="mobile-nav-item">
-            <NavLink exact to="/" className="active">
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
               <span>00</span> HOME
             </NavLink>
           </li>
           <li className="mobile-nav-item">
-            <NavLink to="/DestinationPage" activeClassName="active">
+            <NavLink
+              to="/DestinationPage"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
               <span>01</span> DESTINATION
             </NavLink>
           </li>
           <li className="mobile-nav-item">
-            <NavLink to="/CrewPage" activeClassName="active">
+            <NavLink
+              to="/CrewPage"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
               <span>02</span> CREW
             </NavLink>
           </li>
           <li className="mobile-nav-item">
-            <NavLink to="/TechnologyPage" activeClassName="active">
+            <NavLink
+              to="/TechnologyPage"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
               <span>03</span> TECHNOLOGY
             </NavLink>
           </li>
