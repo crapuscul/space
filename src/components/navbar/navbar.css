@@ -30,6 +30,8 @@
 
     }
     .transparent-box li{
+        cursor: pointer;
+        transition: ease-in-out all .5s;
         display: flex;
         flex-direction: row;
         gap: 10px;
@@ -144,6 +146,8 @@
             position: relative;
         }
         .hamburger{
+            transition: ease-in-out all .5s;
+            cursor: pointer;
             display: flex;
             justify-content: center;
             align-items: center;
