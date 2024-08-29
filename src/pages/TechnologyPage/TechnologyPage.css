@@ -53,6 +53,7 @@ body.technology-body{
     
 }
 .tech-nav ul li {
+    cursor: pointer;
     width: var(--spacing-extra-huge); 
     height: var(--spacing-extra-huge); 
     border-radius: 50%;

@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./CrewPage.css";
-
+import douglasHurleyImg from "../../assets/images/crew/image-douglas-hurley.webp";
+import markShuttleworthImg from "../../assets/images/crew/image-mark-shuttleworth.png";
+import victorGloverImg from "../../assets/images/crew/image-victor-glover.png";
+import anoushehAnsariImg from "../../assets/images/crew/image-anousheh-ansari.png";
 export default function CrewPage() {
   const crewMembers = {
     crew1: {
-      picture: "../../assets/images/crew/image-douglas-hurley.webp",
+      picture: douglasHurleyImg,
 
       title: "COMMANDER",
       name: "DOUGLAS HURLEY",
@@ -12,21 +15,21 @@ export default function CrewPage() {
         "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.",
     },
     crew2: {
-      picture: "../../assets/images/crew/image-mark-shuttleworth.png",
+      picture: markShuttleworthImg,
       title: "MISSION SPECIALIST",
       name: "MARK SHUTTLEWORTH",
       description:
         "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.",
     },
     crew3: {
-      picture: "../../assets/images/crew/image-victor-glover.png",
+      picture: victorGloverImg,
       title: "PILOT",
       name: "VICTOR GLOVER",
       description:
         "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18. He was a crew member of Expedition 64, and served as a station systems flight engineer.",
     },
     crew4: {
-      picture: "../../assets/images/crew/image-anousheh-ansari.png",
+      picture: anoushehAnsariImg,
       title: "FLIGHT ENGINEER",
       name: "ANOUSHEH ANSARI",
       description:
